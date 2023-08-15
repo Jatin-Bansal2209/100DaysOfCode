@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/rotate-array/description/
-class Solution {
+class Solution g{
+
     public void rotate(int[] nums, int k) {
         while (k >= nums.length)
             k = k - nums.length;
@@ -14,7 +15,7 @@ class Solution {
             nums[start] = nums[end];
             nums[end] = temp;
             start++;
-            end--;
+            end = end - 1;
         }
     }
 }
